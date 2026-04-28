@@ -51,4 +51,4 @@ def main(instance_file, solution_file, enforce_mandatory=True):
 
 if __name__ == "__main__":
     main("data/ctop_main_instance.txt", "solutions/solution_mandatory.txt", True)
-    main("data/ctop_main_instance.txt", "solutions/solution.txt", False)
+    main("data/ctop_main_instance.txt", "solutions/solution_no_mandatory.txt", False)
