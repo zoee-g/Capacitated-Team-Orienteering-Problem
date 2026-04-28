@@ -3,6 +3,7 @@ from Parser import load_model
 from SolutionValidator import validate_solution, parse_solution_file
 from Solver import solve
 
+
 def main(instance_file, solution_file, enforce_mandatory=True):
     print(f"Loading Instance: '{instance_file}'...")
     model = load_model(instance_file)
@@ -37,7 +38,9 @@ def main(instance_file, solution_file, enforce_mandatory=True):
             print("\n✅ Solution is VALID.")
             print(f"🏆 Total Profit Collected: {report['total_profit']}")
             print("\nRoute Details:")
-            for i, (load, cost, profit) in enumerate(zip(report['route_loads'], report['route_costs'], report['route_profits'])):
+            for i, (load, cost, profit) in enumerate(
+                    zip(report['route_loads'], report['route_costs'], report['route_profits'])
+            ):
                 print(f"Route {i} -> Load = {load}/{model.capacity}, Time = {cost:.2f}/{model.t_max}, Profit = {profit}")
         else:
             print("\n❌ Solution is INVALID.")
@@ -50,5 +53,5 @@ def main(instance_file, solution_file, enforce_mandatory=True):
 
 
 if __name__ == "__main__":
-    main("data/ctop_main_instance.txt", "solutions/solution_mandatory.txt", True)
-    main("data/ctop_main_instance.txt", "solutions/solution_no_mandatory.txt", False)
+    main("../data/ctop_main_instance.txt", "../solutions/solution_mandatory.txt", True)
+    main("../data/ctop_main_instance.txt", "../solutions/solution_no_mandatory.txt", False)
