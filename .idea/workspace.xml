@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b03df65a-eec5-4c42-be62-7fcd1f71e494" name="Changes" comment="" />
+    <list default="true" id="b03df65a-eec5-4c42-be62-7fcd1f71e494" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/solutions/solution.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/solution_mandatory.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SolutionPlotter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SolutionValidator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Solver.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
