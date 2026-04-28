@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b03df65a-eec5-4c42-be62-7fcd1f71e494" name="Changes" comment="update files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b03df65a-eec5-4c42-be62-7fcd1f71e494" name="Changes" comment="update file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +65,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777406541973</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update file">
+      <option name="closed" value="true" />
+      <created>1777411015152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1777411015152</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update file">
+      <option name="closed" value="true" />
+      <created>1777411028720</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777411028720</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +97,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update files" />
+    <MESSAGE value="update file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update file" />
   </component>
 </project>
