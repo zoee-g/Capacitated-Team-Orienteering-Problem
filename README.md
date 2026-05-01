@@ -1,6 +1,6 @@
 # Capacitated-Team-Orienteering-Problem
 
-This is a solver written in Python for the Capacitated Team Orienteering Problem (CTOP) in a last-mile logistics context. Developed as a university assignment for the course: Operations Research and Computational Intelligence course.
+This is a solver written in Python for the Capacitated Team Orienteering Problem (CTOP) in a last-mile logistics context. Developed as a university assignment for the course: Operations Research and Computational Intelligence.
 
 
 ## Problem Description
