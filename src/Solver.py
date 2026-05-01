@@ -1,7 +1,7 @@
 import random
 
-SEED = 42
-random.seed(SEED)
+seed = 42
+random.seed(seed)
 
 
 def route_cost(model, route):
