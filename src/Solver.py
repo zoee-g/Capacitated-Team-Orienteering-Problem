@@ -1,3 +1,4 @@
+"Tabu + ILS"
 """
 Solver.py — Improved CTOP Solver
 =================================
