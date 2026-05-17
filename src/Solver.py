@@ -418,6 +418,23 @@ class TabuSearchCTOP:
         self.routes = [r for r in self.best_routes if len(r) > 2]
         return self.routes
 
+    def _geographic_removal(self, served, num_remove):
+        """
+        Αφαιρεί πελάτες που είναι κοντά γεωγραφικά μεταξύ τους.
+        Ελευθερώνει ολόκληρη ζώνη → ο repair μπορεί να την ξαναοργανώσει.
+        """
+        m = self.model
+        seed_node = random.choice(served)
+        to_remove = [seed_node]
+        while len(to_remove) < num_remove:
+            ref = random.choice(to_remove)
+            remaining = [n for n in served if n not in to_remove]
+            if not remaining:
+                break
+            remaining.sort(key=lambda n: m.cost_matrix[ref][n])
+            to_remove.append(remaining[0])
+        return to_remove
+
     def _perturbation_phase(self, start_time, time_limit):
         perturbation_count = 0
         while time.time() - start_time < time_limit - 10:
@@ -428,8 +445,14 @@ class TabuSearchCTOP:
             if not served:
                 break
 
-            num_remove = max(3, len(served) // 5)
-            to_remove = random.sample(served, min(num_remove, len(served)))
+            # Πιο aggressive: αφαίρεση 30-40% αντί 20%
+            num_remove = max(5, len(served) // 3)
+
+            # Εναλλαγή: ζυγά → geographic, μονά → random
+            if perturbation_count % 2 == 0:
+                to_remove = self._geographic_removal(served, min(num_remove, len(served)))
+            else:
+                to_remove = random.sample(served, min(num_remove, len(served)))
 
             for node_id in to_remove:
                 for ri, route in enumerate(self.routes):
