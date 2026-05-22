@@ -3,8 +3,8 @@ import time
 
 """
 Solver με alns και μετά tabu.
-Λύση πρώτου προβλήματος: 7670
-Δεύτερου: 8573
+Λύση πρώτου προβλήματος: 7675
+Δεύτερου: 8574
 """
 
 
@@ -68,7 +68,7 @@ class Solver:
         print(f" -> Phase 1 Finished. Best Initial Profit from GRASP: {self.bestProfit}")
 
         seed, time_weight, capacity_weight, rcl_size = self.bestParams
-        random.seed(seed + 555)
+        random.seed(seed)
 
         self.bestSolution = self.ExecuteALNSSearch(
             self.bestSolution,
